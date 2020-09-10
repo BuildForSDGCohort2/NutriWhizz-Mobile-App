@@ -1,0 +1,31 @@
+{
+  "name": "Nutri Whizz",
+  "displayName": "Nutri Whizz",
+  "expo": {
+    "name": "UdaciFitness",
+    "description": "The best nutrition tracker ever",
+    "slug": "expo-template-bare",
+    "privacy": "unlisted",
+    "sdkVersion": "35.0.0",
+    "version": "1.0.0",
+    "entryPoint": "node_modules/expo/AppEntry.js",
+  
+    "orientation": "portrait",
+  
+   
+   
+    "icon": "https://tylermcginnis.com/udacifitness-512.png",
+    "notification": {
+      "icon": "https://tylermcginnis.com/udacifitness-45.png"
+    },
+    "ios": {
+      "bundleIdentifier": "org.udacifitness.exp"
+    },
+    "android": {
+      "package": "org.udacifitness.exp"
+    }
+  }
+}
+    
+  
+

@@ -6,7 +6,7 @@ import {
   MaterialIcons,
   MaterialCommunityIcons
 } from "@expo/vector-icons";
-import { red, orange, blue, lightPurp, pink, white } from './colors'
+import { red, orange, blue, lightPurp, pink, white, limegreen } from './colors'
 import { Notifications } from 'expo'
 import * as Permissions from 'expo-permissions';
 
@@ -40,7 +40,7 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View style={[styles.iconContainer, { backgroundColor: red }]}>
-            <MaterialIcons name="free-breakfast" color={white} size={35} />
+            <MaterialIcons name="free-breakfast" color={limegreen} size={35} />
           </View>
         );
       }

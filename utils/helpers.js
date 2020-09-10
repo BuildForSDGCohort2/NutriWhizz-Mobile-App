@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 export function getMetricMetaInfo(metric) {
   const info = {
     run: {
-      displayName: "Run",
+      displayName: "Breakfast",
       max: 50,
       unit: "miles",
       step: 1,
@@ -40,13 +40,13 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View style={[styles.iconContainer, { backgroundColor: red }]}>
-            <MaterialIcons name="directions-run" color={white} size={35} />
+            <MaterialIcons name="free-breakfast" color={white} size={35} />
           </View>
         );
       }
     },
     bike: {
-      displayName: "Bike",
+      displayName: "Lunch",
       max: 100,
       unit: "miles",
       step: 1,
@@ -54,7 +54,7 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View style={[styles.iconContainer, { backgroundColor: orange }]}>
-            <MaterialCommunityIcons name="bike" color={white} size={32} />
+            <MaterialCommunityIcons name="food-apple-outline" color={white} size={32} />
           </View>
         );
       }

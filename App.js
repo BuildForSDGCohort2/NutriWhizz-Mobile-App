@@ -12,7 +12,7 @@ import { FontAwesome, Ionicons } from '@expo/vector-icons'
 import { createAppContainer } from 'react-navigation'
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
-import { purple, white, limegreen } from './utils/colors';
+import { white, limegreen } from './utils/colors';
 import Constants from 'expo-constants'
 import EntryDetail from './components/EntryDetail';
 import Live from './components/Live'

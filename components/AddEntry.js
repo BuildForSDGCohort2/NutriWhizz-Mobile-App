@@ -7,8 +7,8 @@ import {
     clearLocalNotification,
     setLocalNotification
 } from '../utils/helpers'
-import UdaciSlider from './UdaciSlider'
-import UdaciSteppers from './UdaciSteppers'
+import TheSlider from './TheSlider'
+import TheSteppers from './TheSteppers'
 import DateHeader from './DateHeader'
 import { Ionicons } from '@expo/vector-icons'
 import TextButton from './TextButton'
@@ -128,13 +128,13 @@ class AddEntry extends Component {
                         <View key={key} style={styles.row}>
                             {getIcon()}
                             {type === "slider" ? (
-                                <UdaciSlider
+                                <TheSlider
                                     value={value}
                                     onChange={value => this.slide(key, value)}
                                     {...rest}
                                 />
                             ) : (
-                                    <UdaciSteppers
+                                    <TheSteppers
                                         value={value}
                                         onIncrement={() => this.increment(key)}
                                         onDecrement={() => this.decrement(key)}

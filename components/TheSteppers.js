@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, Platform } from 'react-native
 import { FontAwesome, Entypo } from '@expo/vector-icons';
 import {purple, white, gray} from '../utils/colors';
 
-export default function UdaciSteppers({ max, unit, step, value, onIncrement, onDecrement }) {
+export default function TheSteppers({ max, unit, step, value, onIncrement, onDecrement }) {
     return (
         <View style={[styles.row, {justifyContent: 'space-between'}]}>
       {Platform.OS === 'ios'

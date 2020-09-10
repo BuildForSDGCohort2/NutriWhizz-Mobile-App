@@ -22,22 +22,3 @@ export function removeEntry (key) {
       AsyncStorage.setItem(CALENDAR_STORAGE_KEY, JSON.stringify(data))
     })
 }
-
-/* Instead we can use this.
-/ store.js
-
-import { createStore } from 'redux';
-import Reducer from '../reducers/reducer';
-
-const configureStore = () => {
-  const store = createStore(Reducer);
-
-  store.subscribe(() => {
-    localStorage.state = JSON.stringify(store.getState());
-  });
-
-  return store;
-};
-
-export default configureStore;
-*/

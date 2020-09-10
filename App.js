@@ -14,7 +14,7 @@ import { FontAwesome, Ionicons } from '@expo/vector-icons'
 import { createAppContainer } from 'react-navigation'
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
-import { purple, white } from './utils/colors';
+import { purple, white, limegreen } from './utils/colors';
 import Constants from 'expo-constants'
 import EntryDetail from './components/EntryDetail';
 import TabExample from './components/TabExample'
@@ -61,10 +61,10 @@ const Tabs = createAppContainer(createBottomTabNavigator({
     header: null
   },
   tabBarOptions: {
-    activeTintColor: Platform.OS === 'ios' ? purple : white,
+    activeTintColor: Platform.OS === 'ios' ? limegreen : white,
     style: {
       height: 56,
-      backgroundColor: Platform.OS === 'ios' ? white : purple,
+      backgroundColor: Platform.OS === 'ios' ? white : limegreen,
       shadowColor: 'rgba(0, 0, 0, 0.24)',
       shadowOffset: {
         width: 0,
@@ -94,7 +94,7 @@ const MainNavigator = createAppContainer(createStackNavigator({
     navigationOptions: {
       headerTintColor: white,
       headerStyle: {
-        backgroundColor: purple,
+        backgroundColor: limegreen,
       },
       headerTitleStyle: { width: Dimensions.get("window").width }
     }
@@ -135,7 +135,7 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <View style={{ flex: 1 }}>
-        <UdaciStatusBar backgroundColor={purple} barStyle="light-content" />
+        <UdaciStatusBar backgroundColor={limegreen} barStyle="light-content" />
           <MainNavigator/>
         </View>
       </Provider>

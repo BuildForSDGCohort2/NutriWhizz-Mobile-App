@@ -6,7 +6,7 @@ import {
   MaterialIcons,
   MaterialCommunityIcons
 } from "@expo/vector-icons";
-import { red, orange, blue, lightPurp, pink, white } from './colors'
+import { red, orange, blue, lightPurp, pink, white, limegreen } from './colors'
 import { Notifications } from 'expo'
 import * as Permissions from 'expo-permissions';
 
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 export function getMetricMetaInfo(metric) {
   const info = {
     run: {
-      displayName: "Run",
+      displayName: "Breakfast",
       max: 50,
       unit: "miles",
       step: 1,
@@ -40,13 +40,13 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View style={[styles.iconContainer, { backgroundColor: red }]}>
-            <MaterialIcons name="directions-run" color={white} size={35} />
+            <MaterialIcons name="free-breakfast" color={limegreen} size={35} />
           </View>
         );
       }
     },
     bike: {
-      displayName: "Bike",
+      displayName: "Lunch",
       max: 100,
       unit: "miles",
       step: 1,
@@ -54,7 +54,7 @@ export function getMetricMetaInfo(metric) {
       getIcon() {
         return (
           <View style={[styles.iconContainer, { backgroundColor: orange }]}>
-            <MaterialCommunityIcons name="bike" color={white} size={32} />
+            <MaterialCommunityIcons name="food-apple-outline" color={white} size={32} />
           </View>
         );
       }
